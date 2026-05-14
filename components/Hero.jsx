@@ -40,7 +40,7 @@ const HeroWithForm = () => {
   };
 
   return (
-    <section className="relative min-h-screen w-full flex items-center pt-30 pb-12 overflow-hidden bg-[#253061]">
+    <section className="relative min-h-screen w-full flex items-center pt-30 pb-12 overflow-hidden bg-[#0c4878]">
       {/* Background Cinematic Slider */}
       <div className="absolute inset-0 z-0 ">
         <Swiper
@@ -54,7 +54,7 @@ const HeroWithForm = () => {
             <SwiperSlide key={i}>
               <div className="relative h-full w-full">
                 <img src={slide.img} alt={slide.title} className="h-full w-full object-cover opacity-100 scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0c4878]/50 to-[#189da3]/50" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0c4878] to-[#189da3]/50" />
               </div>
             </SwiperSlide>
           ))}
@@ -71,25 +71,25 @@ const HeroWithForm = () => {
             className="lg:col-span-7 text-white"
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="w-12 h-[2px] bg-[#2a97d0]" />
-              <span className="text-[#2a97d0] font-semibold uppercase tracking-[0.3em] text-[11px]">Best Honeymoon Planners</span>
+              <span className="w-12 h-[2px] bg-[#189da3]" />
+              <span className="text-[#189da3] font-semibold uppercase tracking-[0.3em] text-[11px]">Best Honeymoon Planners</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-semibold leading-[1.05] mb-8">
+            <h1 className="text-4xl md:text-4xl font-semibold leading-[1.05] mb-8">
               Romantic Journeys <br /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#2a97d0]/50">Beyond Maps.</span>
+              <span className="  text-white">Beyond Maps.</span>
             </h1>
-            <p className="text-lg text-white/70 max-w-xl font-medium leading-relaxed mb-10">
+            <p className="text-lg text-white max-w-xl font-medium leading-relaxed mb-10">
               Expertly curated honeymoon experiences across South India. Specialists in Pondicherry, Munnar, and Alleppey.
             </p>
             <div className="flex flex-wrap gap-6">
               <div className="flex flex-col">
-                <span className="text-2xl ffont-semibold">12+</span>
-                <span className="text-[10px] uppercase font-bold text-white/40 tracking-widest">Destinations</span>
+                <span className="text-2xl font-semibold">12+</span>
+                <span className="text-[10px] uppercase font-semibold text-white/40 tracking-widest">Destinations</span>
               </div>
               <div className="h-10 w-[1px] bg-white/10 hidden sm:block" />
               <div className="flex flex-col">
-                <span className="text-2xl ffont-semibold">24/7</span>
-                <span className="text-[10px] uppercase font-bold text-white/40 tracking-widest">Local Support</span>
+                <span className="text-2xl font-semibold">24/7</span>
+                <span className="text-[10px] uppercase font-semibold text-white/40 tracking-widest">Local Support</span>
               </div>
             </div>
           </motion.div>
@@ -101,19 +101,19 @@ const HeroWithForm = () => {
             className="lg:col-span-5 bg-white rounded-[3rem] p-8 lg:p-10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.4)] relative"
           >
             <div className="mb-8">
-              <h3 className="text-[#253061] text-2xl ffont-semibold">Quick Inquiry</h3>
-              <p className="text-gray-400 text-[13px] font-bold mt-1">Personalized itineraries in minutes</p>
+              <h3 className="text-[#0c4878] text-2xl font-semibold">Quick Inquiry</h3>
+              <p className="text-gray-400 text-[13px] font-semibold mt-1">Personalized itineraries in minutes</p>
             </div>
 
             <form onSubmit={handleWhatsAppInquiry} className="space-y-4">
               {/* Name Field */}
               <div className="relative">
-                <RiUser3Line className="absolute left-4 top-1/2 -translate-y-1/2 text-[#2a97d0]" />
+                <RiUser3Line className="absolute left-4 top-1/2 -translate-y-1/2 text-[#189da3]" />
                 <input 
                   required
                   type="text" 
                   placeholder="Full Name"
-                  className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#2a97d0] outline-none transition-all text-[14px] font-bold text-[#253061]"
+                  className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#189da3] outline-none transition-all text-[14px] font-semibold text-[#0c4878]"
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
                 />
               </div>
@@ -121,22 +121,22 @@ const HeroWithForm = () => {
               {/* Grid for Small Fields */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative">
-                  <RiWhatsappLine className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <RiWhatsappLine className="absolute left-4 top-1/2 -translate-y-1/2 text-[#189da3]" />
                   <input 
                     required
                     type="tel" 
                     placeholder="WhatsApp"
-                    className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#2a97d0] outline-none transition-all text-[14px] font-bold text-[#253061]"
+                    className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#189da3] outline-none transition-all text-[14px] font-semibold text-[#0c4878]"
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
                 </div>
                 <div className="relative">
-                  <RiCalendarCheckLine className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <RiCalendarCheckLine className="absolute left-4 top-1/2 -translate-y-1/2 text-[#189da3]" />
                   <input 
                     required
                     type="text" 
                     placeholder="Date"
-                    className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#2a97d0] outline-none transition-all text-[14px] font-bold text-[#253061]"
+                    className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#189da3] outline-none transition-all text-[14px] font-semibold text-[#0c4878]"
                     onChange={(e) => setFormData({...formData, date: e.target.value})}
                   />
                 </div>
@@ -144,10 +144,10 @@ const HeroWithForm = () => {
 
               {/* Destination Dropdown */}
               <div className="relative">
-                <RiMapPin2Line className="absolute left-4 top-1/2 -translate-y-1/2 text-[#2a97d0]" />
+                <RiMapPin2Line className="absolute left-4 top-1/2 -translate-y-1/2 text-[#189da3]" />
                 <select 
                   required
-                  className="w-full pl-11 pr-10 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#2a97d0] outline-none transition-all text-[14px] font-bold text-[#253061] appearance-none cursor-pointer"
+                  className="w-full pl-11 pr-10 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#189da3] outline-none transition-all text-[14px] font-semibold text-[#0c4878] appearance-none cursor-pointer"
                   onChange={(e) => setFormData({...formData, destination: e.target.value})}
                 >
                  <option>Munnar</option>
@@ -167,12 +167,12 @@ const HeroWithForm = () => {
 
               {/* Duration Field */}
               <div className="relative">
-                <RiTimeLine className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                <RiTimeLine className="absolute left-4 top-1/2 -translate-y-1/2 text-[#189da3]" />
                 <input 
                   required
                   type="text" 
                   placeholder="Duration (e.g. 3N / 4D)"
-                  className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#2a97d0] outline-none transition-all text-[14px] font-bold text-[#253061]"
+                  className="w-full pl-11 pr-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:bg-white focus:border-[#189da3] outline-none transition-all text-[14px] font-semibold text-[#0c4878]"
                   onChange={(e) => setFormData({...formData, duration: e.target.value})}
                 />
               </div>
@@ -180,7 +180,7 @@ const HeroWithForm = () => {
               {/* Premium Button */}
               <button 
                 type="submit"
-                className="w-full py-5 bg-[#253061] text-white rounded-2xl ffont-semibold text-[14px] flex items-center justify-center gap-3 shadow-2xl shadow-[#253061]/30 hover:bg-[#2a97d0] transition-all group"
+                className="w-full py-5 bg-[#0c4878] text-white rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-3 shadow-2xl shadow-[#0c4878]/30 hover:bg-[#189da3] transition-all group"
               >
                 PLAN MY TRIP
                 <RiArrowRightUpLine size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
