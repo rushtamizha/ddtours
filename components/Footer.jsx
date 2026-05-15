@@ -1,106 +1,135 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import { 
-  RiWhatsappLine, 
-  RiFacebookCircleFill, 
-  RiInstagramLine, 
-  RiTwitterXLine,
-  RiPhoneLine,
-  RiMailLine,
-  RiMapPin2Line
+  FaFacebookF, 
+  FaInstagram, 
+  FaTwitter, 
+  FaLinkedinIn, 
+  FaWhatsapp 
+} from "react-icons/fa";
+import { 
+  RiMailLine, 
+  RiPhoneLine, 
+  RiMapPinLine, 
+  RiArrowRightSLine 
 } from "react-icons/ri";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const quickLinks = [
+    { name: "Home", href: "#" },
+    { name: "Packages", href: "/packages" },
+    { name: "Services", href: "/services" },
+    { name: "About Us", href: "/about" },
+    { name: "Contact", href: "/contact" },
+  ];
+
+  const services = [
+    { name: "Flight Booking", href: "/services" },
+    { name: "Hotel Booking", href: "/services" },
+    { name: "Car Rental", href: "/services" },
+    { name: "Visa Services", href: "/services" },
+    { name: "Forex Services", href: "/services" },
+  ];
+
+  const socialLinks = [
+    { icon: <FaFacebookF />, href: "#", color: "hover:bg-blue-600" },
+    { icon: <FaInstagram />, href: "#", color: "hover:bg-pink-600" },
+    { icon: <FaTwitter />, href: "#", color: "hover:bg-sky-500" },
+    { icon: <FaLinkedinIn />, href: "#", color: "hover:bg-blue-700" },
+    { icon: <FaWhatsapp />, href: "https://wa.me/919843111922", color: "hover:bg-green-500" },
+  ];
+
   return (
-    <footer className="bg-[#0c4878] text-white pt-20 pb-10">
+    <footer className="bg-[#0c4878] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
-          {/* Column 1: Brand & Bio */}
+          {/* Brand Column */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold tracking-tighter">
-              DD TOURS AND TRAVELS
+            <h2 className="text-2xl font-serif font-bold tracking-wider">
+              DD Tour <span className="text-[#189da3]">Travels</span>
             </h2>
-            <p className="text-white text-sm font-medium leading-relaxed">
-              Specializing in crafting romantic journeys and personalized honeymoon experiences. 
-              Built on the trusted legacy of Teakwood Travels.
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Your trusted travel partner since 2006. We specialize in creating 
+              memorable journeys across the globe with personalized care and expertise.
             </p>
-            <div className="flex gap-4">
-              <Link href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#189da3] transition-all text-xl">
-                <RiInstagramLine />
-              </Link>
-              <Link href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#189da3] transition-all text-xl">
-                <RiFacebookCircleFill />
-              </Link>
-              <Link href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#189da3] transition-all text-xl">
-                <RiWhatsappLine />
-              </Link>
+            <div className="flex gap-3">
+              {socialLinks.map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  className={`w-10 h-10 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 ${social.color} hover:scale-110`}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-[0.2em] mb-8 text-[#189da3]">Quick Links</h4>
-            <ul className="space-y-4 text-sm font-semibold text-white">
-              <li><Link href="/about" className="hover:text-white transition-colors">Our Story</Link></li>
-              <li><Link href="/packages" className="hover:text-white transition-colors">Honeymoon Packages</Link></li>
-              <li><Link href="/#services" className="hover:text-white transition-colors">Specialist Services</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+            <h4 className="text-lg font-bold mb-6 border-b border-white/10 pb-2 inline-block">Quick Links</h4>
+            <ul className="space-y-4">
+              {quickLinks.map((link, idx) => (
+                <li key={idx}>
+                  <a href={link.href} className="text-gray-300 hover:text-[#189da3] text-sm flex items-center gap-2 transition-colors group">
+                    <RiArrowRightSLine className="group-hover:translate-x-1 transition-transform" />
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Column 3: Top Destinations */}
+          {/* Services */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-[0.2em] mb-8 text-[#189da3]">Destinations</h4>
-            <ul className="space-y-4 text-sm font-semibold text-white">
-              <li><Link href="/packages" className="hover:text-white transition-colors">Pondicherry Specialist</Link></li>
-              <li><Link href="/packages" className="hover:text-white transition-colors">Munnar Tea Gardens</Link></li>
-              <li><Link href="/packages" className="hover:text-white transition-colors">Alleppey Houseboats</Link></li>
-              <li><Link href="/packages" className="hover:text-white transition-colors">Maldives Luxury</Link></li>
+            <h4 className="text-lg font-bold mb-6 border-b border-white/10 pb-2 inline-block">Services</h4>
+            <ul className="space-y-4">
+              {services.map((service, idx) => (
+                <li key={idx}>
+                  <a href={service.href} className="text-gray-300 hover:text-[#189da3] text-sm flex items-center gap-2 transition-colors group">
+                    <RiArrowRightSLine className="group-hover:translate-x-1 transition-transform" />
+                    {service.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Column 4: Contact Details (From your File) */}
+          {/* Contact Info */}
           <div className="space-y-6">
-            <h4 className="font-semibold text-sm uppercase tracking-[0.2em] mb-8 text-[#189da3]">Reach Us</h4>
-            <div className="space-y-4 text-sm font-medium text-white">
-              <div className="flex items-start gap-3">
-                <RiMapPin2Line className="text-[#189da3] text-xl shrink-0" />
-                <p>Auroville Main Road, Kuyilapalayam, <br />Puducherry - 605101</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <RiPhoneLine className="text-[#189da3] text-xl shrink-0" />
-                <p>+91 98845 46406</p>
-                <p>+91 9994474395</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <RiMailLine className="text-[#189da3] text-xl shrink-0" />
-                <p>teakwoodtravels@gmail.com</p>
+            <h4 className="text-lg font-bold mb-6 border-b border-white/10 pb-2 inline-block">Contact Info</h4>
+            <div className="space-y-4">
+              <a href="tel:+919843111922" className="flex items-start gap-4 text-gray-300 hover:text-[#189da3] transition-colors">
+                <RiPhoneLine className="text-xl text-[#189da3]" />
+                <span className="text-sm">+91 98431 11922</span>
+              </a>
+              <a href="mailto:k4tourworld@gmail.com" className="flex items-start gap-4 text-gray-300 hover:text-[#189da3] transition-colors">
+                <RiMailLine className="text-xl text-[#189da3]" />
+                <span className="text-sm break-all">dd@gmail.com</span>
+              </a>
+              <div className="flex items-start gap-4 text-gray-300">
+                <RiMapPinLine className="text-xl text-[#189da3] shrink-0" />
+                <span className="text-sm leading-relaxed">
+                  17, Gokhale Road, Chinna Chokkikulam, near PWD office, Madurai - 625002
+                </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Wepzite Credit */}
-        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[11px] font-semibold text-white uppercase tracking-widest">
-            © {currentYear} Teakwood Holidays. All Rights Reserved.
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+          <p className="text-gray-400 text-xs">
+            © {currentYear} <span className="text-white font-semibold">K4 Tour World</span>. All Rights Reserved.
           </p>
-          
-          <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-white">
-            <span>Developed by</span>
-            <Link 
-              href="https://wepzite.in" 
-              target="_blank"
-              className="text-[#189da3] hover:text-white transition-colors font-semibold"
-            >
-              Wepzite.in
-            </Link>
-          </div>
+          <p className="text-gray-400 text-xs">
+            Powered by <span className="text-[#189da3] hover:underline cursor-pointer">DD Tours and Travels</span>
+          </p>
         </div>
       </div>
     </footer>

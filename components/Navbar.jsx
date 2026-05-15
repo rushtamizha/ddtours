@@ -30,7 +30,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/", icon: <RiCompass3Line />, desc: "Back to start" },
     { name: "Packages", href: "/packages", icon: <RiCompass3Line />, desc: "Curated romantic getaways" },
-    { name: "Services", href: "/#services", icon: <RiServiceLine />, desc: "Specialized travel care" },
+    { name: "Services", href: "/services", icon: <RiServiceLine />, desc: "Specialized travel care" },
     { name: "About", href: "/about", icon: <RiInformationLine />, desc: "Our story and mission" },
     { name: "Contact", href: "/contact", icon: <RiSendPlaneFill />, desc: "Let's plan your trip" },
   ];
