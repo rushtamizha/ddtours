@@ -106,16 +106,16 @@ const Footer = () => {
             <div className="space-y-4">
               <a href="tel:+919843111922" className="flex items-start gap-4 text-gray-300 hover:text-[#189da3] transition-colors">
                 <RiPhoneLine className="text-xl text-[#189da3]" />
-                <span className="text-sm">+91 98431 11922</span>
+                <span className="text-sm">+919597121924</span>
               </a>
               <a href="mailto:k4tourworld@gmail.com" className="flex items-start gap-4 text-gray-300 hover:text-[#189da3] transition-colors">
                 <RiMailLine className="text-xl text-[#189da3]" />
-                <span className="text-sm break-all">dd@gmail.com</span>
+                <span className="text-sm break-all">ddtoursandtravelsixm@gmail.com</span>
               </a>
               <div className="flex items-start gap-4 text-gray-300">
                 <RiMapPinLine className="text-xl text-[#189da3] shrink-0" />
                 <span className="text-sm leading-relaxed">
-                  17, Gokhale Road, Chinna Chokkikulam, near PWD office, Madurai - 625002
+                  Plot No 1,Ganesh Nagar first Street <br/> Suryanagar, K. Pudur  <br/>Madurai 625007.
                 </span>
               </div>
             </div>
@@ -125,7 +125,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           <p className="text-gray-400 text-xs">
-            © {currentYear} <span className="text-white font-semibold">K4 Tour World</span>. All Rights Reserved.
+            © {currentYear} <span className="text-white font-semibold">DD Tours & Travels</span>. All Rights Reserved.
           </p>
           <p className="text-gray-400 text-xs">
             Powered by <span className="text-[#189da3] hover:underline cursor-pointer">DD Tours and Travels</span>

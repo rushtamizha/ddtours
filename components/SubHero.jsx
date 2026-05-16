@@ -53,7 +53,7 @@ const HoneymoonHero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <button 
-                onClick={() => window.open('https://wa.me/919884546406', '_blank')}
+                onClick={() => window.open('https://wa.me/919597121924', '_blank')}
                 className="flex items-center justify-center gap-3 bg-[#0c4878] text-white px-10 py-5 rounded-2xl font-semibold text-sm tracking-widest hover:bg-[#189da3] transition-all shadow-2xl shadow-[#0c4878]/20 group"
               >
                 <FaWhatsapp className="text-xl group-hover:rotate-12 transition-transform" />

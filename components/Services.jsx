@@ -60,7 +60,7 @@ const Services = () => {
 
   const handleWhatsApp = (service) => {
     const message = encodeURIComponent(`Hi Teakwood Holidays, I'm looking for ${service} services. Please help.`);
-    window.open(`https://wa.me/919884546406?text=${message}`, "_blank");
+    window.open(`https://wa.me/919597121924?text=${message}`, "_blank");
   };
 
   return (

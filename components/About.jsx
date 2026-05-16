@@ -88,7 +88,7 @@ const AboutUs = () => {
               </button>
               
               <div className="flex gap-4">
-                <a href="tel:+919884546406" className="w-12 h-12 rounded-xl border border-gray-200 flex items-center justify-center text-[#0c4878] hover:border-[#189da3] hover:text-[#189da3] transition-all">
+                <a href="tel:+919597121924" className="w-12 h-12 rounded-xl border border-gray-200 flex items-center justify-center text-[#0c4878] hover:border-[#189da3] hover:text-[#189da3] transition-all">
                   <RiPhoneFill />
                 </a>
                 <a href="mailto:info@k4tourworld.com" className="w-12 h-12 rounded-xl border border-gray-200 flex items-center justify-center text-[#0c4878] hover:border-[#189da3] hover:text-[#189da3] transition-all">

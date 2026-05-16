@@ -17,7 +17,7 @@ const Packages = () => {
     const message = encodeURIComponent(
       `Hi Teakwood Holidays, I'm interested in the ${pkgName} package. Please share details.`
     );
-    window.open(`https://wa.me/919884546406?text=${message}`, "_blank");
+    window.open(`https://wa.me/919597121924?text=${message}`, "_blank");
   };
 
   return (

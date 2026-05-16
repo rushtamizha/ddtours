@@ -36,7 +36,7 @@ const Navbar = () => {
   ];
 
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/919884546406?text=Hi Teakwood Holidays, I'm interested in planning a honeymoon!`, "_blank");
+    window.open(`https://wa.me/919597121924?text=Hi Teakwood Holidays, I'm interested in planning a honeymoon!`, "_blank");
   };
 
   const listVariants = {

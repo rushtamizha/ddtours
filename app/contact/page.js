@@ -14,14 +14,14 @@ const Contact = () => {
   const contactDetails = [
     {
       title: "Call Us",
-      value: "+91 98431 11922",
+      value: "+919597121924",
       link: "tel:+919843111922",
       icon: <RiPhoneFill />,
       color: "bg-[#0c4878]/5 text-[#0c4878]"
     },
     {
       title: "Email Us",
-      value: "dd@gmail.com",
+      value: "ddtoursandtravelsixm@gmail.com",
       link: "mailto:k4tourworld@gmail.com",
       icon: <RiMailFill />,
       color: "bg-[#189da3]/5 text-[#189da3]"
