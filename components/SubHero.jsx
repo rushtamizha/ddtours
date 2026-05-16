@@ -86,12 +86,9 @@ const HoneymoonHero = () => {
             >
               <div className="flex items-center gap-3">
                 <RiShieldCheckLine className="text-[#189da3] text-2xl" />
-                <span className="text-[11px] font-semibold text-[#0c4878] uppercase leading-tight">Backed by <br/>Teakwood Travels</span>
+                <span className="text-[11px] font-semibold text-[#0c4878] uppercase leading-tight">Backed by <br/>DD Tours & Travels</span>
               </div>
-              <div className="flex items-center gap-3">
-                <RiMapPinRangeLine className="text-[#189da3] text-2xl" />
-                <span className="text-[11px] font-semibold text-[#0c4878] uppercase leading-tight">Pondicherry <br/>Local Experts</span>
-              </div>
+              
             </motion.div>
           </div>
 

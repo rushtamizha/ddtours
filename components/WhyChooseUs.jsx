@@ -105,7 +105,7 @@ const WhyChooseUs = () => {
           className="mt-20 p-8 rounded-[2.5rem] bg-[#0c4878] text-white flex flex-wrap justify-around items-center gap-8 text-center"
         >
           <div>
-            <p className="text-3xl md:text-4xl font-semibold mb-1">50k+</p>
+            <p className="text-3xl md:text-4xl font-semibold mb-1">5k+</p>
             <p className="text-[#189da3] text-xs font-semibold uppercase tracking-widest">Happy Travelers</p>
           </div>
           <div className="hidden md:block w-px h-12 bg-white/10"></div>

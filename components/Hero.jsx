@@ -8,8 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 import Link from "next/link";
-import { heroData, companyConfig } from "@/tours";
-
+import tours, { heroData, companyConfig } from "@/tours";
 const EnterpriseHero = () => {
   return (
     <section className="relative flex items-center justify-center w-full h-screen overflow-hidden capitalize bg-[#189da3]">
@@ -23,7 +22,7 @@ const EnterpriseHero = () => {
           autoplay={{ delay: 6000, disableOnInteraction: false }}
           className="w-full h-full"
         >
-          {heroData.map((slide) => (
+          {tours.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className="relative w-full h-full">
                 <motion.img

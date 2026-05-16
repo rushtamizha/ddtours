@@ -50,7 +50,7 @@ const Footer = () => {
           
           {/* Brand Column */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-serif font-bold tracking-wider">
+            <h2 className="text-2xl font-serif font-semibold tracking-wider">
               DD Tour <span className="text-[#189da3]">Travels</span>
             </h2>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -72,7 +72,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold mb-6 border-b border-white/10 pb-2 inline-block">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-6 border-b border-white/10 pb-2 inline-block">Quick Links</h4>
             <ul className="space-y-4">
               {quickLinks.map((link, idx) => (
                 <li key={idx}>
@@ -87,7 +87,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold mb-6 border-b border-white/10 pb-2 inline-block">Services</h4>
+            <h4 className="text-lg font-semibold mb-6 border-b border-white/10 pb-2 inline-block">Services</h4>
             <ul className="space-y-4">
               {services.map((service, idx) => (
                 <li key={idx}>
@@ -102,7 +102,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <h4 className="text-lg font-bold mb-6 border-b border-white/10 pb-2 inline-block">Contact Info</h4>
+            <h4 className="text-lg font-semibold mb-6 border-b border-white/10 pb-2 inline-block">Contact Info</h4>
             <div className="space-y-4">
               <a href="tel:+919843111922" className="flex items-start gap-4 text-gray-300 hover:text-[#189da3] transition-colors">
                 <RiPhoneLine className="text-xl text-[#189da3]" />

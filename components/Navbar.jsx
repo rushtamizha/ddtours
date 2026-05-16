@@ -55,7 +55,7 @@ const Navbar = () => {
         animate={{ y: 0, opacity: 1 }}
         className={`mx-auto transition-all duration-500 relative mt-4 ${
           scrolled 
-            ? "max-w-4xl rounded-full bg-white/90 backdrop-blur-md shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] py-2 border border-white" 
+            ? "max-w-4xl rounded-full bg-white/90 backdrop-blur-md shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] py-4 border border-white" 
             : "max-w-5xl py-4 bg-white backdrop-blur-sm rounded-full border border-white/20"
         }`}
       >
