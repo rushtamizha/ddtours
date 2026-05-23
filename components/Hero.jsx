@@ -51,7 +51,7 @@ const EnterpriseHero = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2 mb-8 border rounded-full bg-white/10 backdrop-blur-md border-white/20">
             <Globe size={14} className="text-[#189da3] animate-pulse" />
             <span className="text-white text-[10px] font-semibold uppercase tracking-[0.3em]">
-              India's Trusted Travel Partner Since 2006
+              India's Trusted Travel Partner Since 2016
             </span>
           </div>
 
@@ -91,7 +91,7 @@ const EnterpriseHero = () => {
             Location
           </p>
           <p className="text-white text-[12px] font-semibold uppercase tracking-widest">
-            Kerala, India
+            Madurai, India
           </p>
         </div>
 

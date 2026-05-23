@@ -54,7 +54,7 @@ const Footer = () => {
               DD Tour <span className="text-[#189da3]">Travels</span>
             </h2>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Your trusted travel partner since 2006. We specialize in creating 
+              Your trusted travel partner since 2016. We specialize in creating 
               memorable journeys across the globe with personalized care and expertise.
             </p>
             <div className="flex gap-3">

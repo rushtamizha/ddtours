@@ -28,7 +28,7 @@ const Contact = () => {
     },
     {
       title: "Visit Us",
-      value: "17, Gokhale Road, Chinna Chokkikulam, Madurai - 625002",
+      value: "Plot No 1,Ganesh Nagar first Street Suryanagar, K. Pudur Madurai 625007",
       link: "https://maps.google.com",
       icon: <RiMapPin2Fill />,
       color: "bg-[#0c4878]/5 text-[#0c4878]"
@@ -92,7 +92,7 @@ const Contact = () => {
 
             {/* Quick WhatsApp CTA */}
             <a 
-              href="https://wa.me/919843111922" 
+              href="https://wa.me/919597121924" 
               target="_blank"
               className="flex items-center justify-center gap-3 bg-[#25d366] text-white py-5 rounded-3xl font-semibold hover:opacity-90 transition-all shadow-lg shadow-[#25d366]/20 mt-4"
             >
@@ -125,7 +125,9 @@ const Contact = () => {
                   <RiMapPin2Fill />
                 </div>
                 <p className="text-xs font-semibold text-[#0c4878]">
-                  Located near PWD Office, Madurai
+                  Plot No 1,Ganesh Nagar<br/> first Street
+                  Suryanagar, K. Pudur
+<br/>Madurai 625007.
                 </p>
               </div>
             </div>

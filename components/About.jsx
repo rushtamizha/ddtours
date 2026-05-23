@@ -25,7 +25,7 @@ const AboutUs = () => {
           >
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8df0?auto=format&fit=crop&q=80" 
+                src="/banner.jpeg"
                 alt="Travel Experience" 
                 className="w-full h-[500px] object-cover"
               />
@@ -60,7 +60,7 @@ const AboutUs = () => {
               <span className="text-[#189da3]">Your Travel Partner</span>
             </h2>
             <p className="mt-6 text-gray-500 font-medium leading-relaxed text-lg">
-              Established in 2006, DD Tours & Travels has been creating memorable travel experiences for over 17 years. We are one of Madurai's most reputed travel agencies, offering personalized services with expertise and dedication.
+              Established in 2016, DD Tours & Travels has been creating memorable travel experiences for over 10 years. We are one of Madurai's most reputed travel agencies, offering personalized services with expertise and dedication.
             </p>
 
             {/* Highlights List */}

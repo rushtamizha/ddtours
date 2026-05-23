@@ -39,8 +39,8 @@ const WhyChooseUs = () => {
       icon: <RiRefreshLine />,
     },
     {
-      title: "17+ Years Experience",
-      desc: "Proudly serving travelers since 2006 with excellence and reliability.",
+      title: "10+ Years Experience",
+      desc: "Proudly serving travelers since 2016 with excellence and reliability.",
       icon: <RiAwardLine />,
     },
   ];
