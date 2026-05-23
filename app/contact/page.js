@@ -107,7 +107,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             className="lg:col-span-3 h-[400px] lg:h-full min-h-[450px] rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl relative"
           >
-            <iframe 
+            {/* <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.123456789!2d78.1326!3d9.9328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5871f34567b%3A0x1234567890abcdef!2s17%2C%20Gokhale%20Rd%2C%20Chinna%20Chokkikulam%2C%20Madurai%2C%20Tamil%20Nadu%20625002!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
               width="100%" 
               height="100%" 
@@ -116,7 +116,7 @@ const Contact = () => {
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
               className="grayscale-[0.2] contrast-[1.1]"
-            ></iframe>
+            ></iframe> */}
             
             {/* Map Overlay Label */}
             <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-white/20 hidden md:block">
